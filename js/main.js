@@ -31,3 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.style.animation = 'hideMenu 1s forwards';
   });
 });
+
+function rotateOnClick(element) {
+  element.classList.add('rotate');
+  setTimeout(function() {
+    element.classList.remove('rotate');
+  }, 1000);
+}
